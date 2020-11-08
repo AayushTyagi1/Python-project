@@ -13,5 +13,7 @@ def check_cpu_usage():
 
 if not check_disk_usage("/") or not check_cpu_usage():
     print("Unhealthy Condition")
+elif check_localhost() and check_connectivity():
+    print("Everything ok")
 else:
-    print("HEALTHY")
+    print("Network checks failed")
