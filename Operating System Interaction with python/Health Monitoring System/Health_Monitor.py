@@ -1,5 +1,6 @@
 import shutil
 import psutil
+from network import *
 
 def check_disk_usage(disk):
     du = shutil.disk_usage(disk)
